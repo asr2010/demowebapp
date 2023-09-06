@@ -15,4 +15,20 @@ public class SayHelloController {
 	public String sayHello() {
 		return "Hello World!";
 	}
+	
+	@RequestMapping("say-hello-html")
+	@ResponseBody
+	public String sayHelloHtml() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>");
+		sb.append("<head>");
+		sb.append("<title> html page </title>");
+		sb.append("</head>");
+		sb.append("<body>");
+		sb.append("html page");
+		sb.append("</body>");
+		sb.append("</html>");
+		
+		return sb.toString();
+	}
 }
