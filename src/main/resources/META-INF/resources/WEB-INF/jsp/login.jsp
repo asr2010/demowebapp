@@ -3,7 +3,9 @@
 		<title> Login page </title>
 	</head>
 	<body>
-		Login Page
+		<div class="container">
+		
+		<h1>Login Page</h1>
 		<pre>
 			${errormessage}
 		</pre>
@@ -12,5 +14,6 @@
 			Password: <input type="password" name="password">
 			<input type="submit">
 		</form>
+		</div>
 	</body>
 </html>
